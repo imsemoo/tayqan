@@ -1,0 +1,392 @@
+body {
+  background: var(--color-surface);
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar {
+  background: var(--color-content-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  color: var(--color-primary);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--color-primary-hover);
+}
+
+.btn-search {
+  width: 40px;
+  height: 40px;
+}
+
+/* Enable dropdown on hover instead of click */
+.navbar .dropdown {
+  position: relative;
+  /* ensure proper positioning */
+}
+
+.navbar .dropdown:hover>.dropdown-menu {
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Base dropdown-menu styling */
+.navbar .dropdown-menu {
+  display: block;
+  /* keep flow for animation */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  /* align RTL dropdown to the right */
+  min-width: 200px;
+  background: var(--color-content-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0;
+  margin: var(--space-xs) 0 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Dropdown item styling */
+.navbar .dropdown-menu .dropdown-item {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-sm);
+  color: var(--text-primary);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Hover state on items */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background: var(--color-primary-hover);
+  color: #fff;
+}
+
+/* Divider styling (if used) */
+.navbar .dropdown-menu .dropdown-divider {
+  height: 1px;
+  margin: var(--space-xs) 0;
+  background-color: var(--color-border);
+}
+
+/*Start Main-feat-articles*/
+
+.featured-articles {
+  padding: var(--container-padding-vertical) 0;
+}
+
+.featured-articles__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* two equal columns */
+  grid-template-rows: auto auto;
+  /* two rows: top & bottom */
+  gap: var(--space-md);
+  /* comfortable gutter */
+}
+
+/* Card 1: left half, full height */
+.featured-articles__grid>article:nth-child(1) {
+  grid-column: 1;
+  /* in first column */
+  grid-row: 1 / span 2;
+  /* spans both rows */
+}
+
+/* Card 2: top right cell */
+.featured-articles__grid>article:nth-child(2) {
+  grid-column: 2;
+  /* in second column */
+  grid-row: 1;
+  /* only first row */
+}
+
+/* Cards 3 & 4: share bottom-right cell, each half width */
+.featured-articles__grid>article:nth-child(3),
+.featured-articles__grid>article:nth-child(4) {
+  grid-column: 2;
+  /* second column */
+  grid-row: 2;
+  /* second row */
+  width: calc((100% - var(--space-sm)) / 2);
+  /* half of cell minus gap */
+}
+
+/* Card 3 aligned to start (right in RTL) */
+.featured-articles__grid>article:nth-child(3) {
+  justify-self: start;
+}
+
+/* Card 4 aligned to end (left in RTL) */
+.featured-articles__grid>article:nth-child(4) {
+  justify-self: end;
+}
+
+.featured-articles__grid>article:nth-child(1) .article-card__title {
+  font-size: var(--font-xl);
+}
+
+.article-card--medium .article-card__title {
+  font-size: var(--font-lg);
+
+}
+
+/* 5. Base styling for all article cards (you already have this) */
+.article-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+
+/* Article image */
+.article-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* Gradient overlay */
+.article-card__overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: var(--space-sm);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* Meta info: type, category, date */
+.article-card__meta {
+  display: flex;
+  gap: var(--space-xs);
+  align-items: center;
+}
+
+
+
+.article-card__label--type {
+  background-color: var(--color-danger);
+}
+
+.article-card__label--category {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+/* Date styling */
+.article-card__date {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xxs);
+  font-size: var(--font-xs);
+}
+
+/* Title styling */
+.article-card__title {
+  font-size: var(--font-md);
+  margin: 0;
+}
+
+.article-card__title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Contributors container */
+.article-card__contributors {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-xs);
+}
+
+/* Single contributor item */
+.contributors__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  cursor: default;
+}
+
+/* Contributor icon */
+.contributors__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Label showing first name + extra count */
+.contributors__label {
+  font-size: var(--font-xs);
+  position: relative;
+}
+
+.contributors__extra {
+  line-height: 1.2;
+  margin-right: var(--space-xxs);
+
+}
+
+/* 1) Contributors dropdown opens upward with a little arrow */
+.contributors__dropdown {
+  position: absolute;
+  bottom: calc(100% + var(--space-xs));
+  /* place above the trigger */
+  right: 0;
+  display: none;
+  flex-direction: column;
+  gap: var(--space-sm);
+  background: var(--color-content-bg);
+  color: var(--text-primary);
+  padding: var(--space-sm) var(--space-xs);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 10;
+  font-size: 14px;
+  width: max-content;
+}
+
+.contributors__item--publisher .contributors__dropdown {
+  left: 0;
+  right: unset;
+
+}
+
+.contributors__dropdown .contributors__icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* tiny arrow pointing down from the dropdown */
+.contributors__dropdown::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  right: var(--space-md);
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--color-content-bg) transparent transparent transparent;
+}
+
+/* show on hover */
+.contributors__item:hover .contributors__dropdown {
+  display: flex;
+}
+
+/* 2) Base badge styling */
+.article-card__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  font-size: 13px;
+  transition: transform 0.2s ease;
+  color: var(--color-white);
+  padding: 4px 14px;
+  max-width: max-content;
+  border-radius: 4px;
+  background: #EEEEEE;
+  height: 25px;
+  border-right: 3px solid #EEEEEE;
+
+
+}
+
+.article-card__label:hover {
+  transform: scale(1.05);
+}
+
+/* 3) Type–specific colors */
+/* add the corresponding class on each badge, e.g. <a class="article-card__label article-card__label--type type-zayef">زائف</a> */
+.type-zayef {
+  background: hsl(2, 64%, 98%);
+  color: hsl(2, 64%, 58%);
+  border-color: hsl(2, 64%, 58%);
+}
+
+.type-mudallal {
+  background: hsl(45, 100%, 98%);
+  color: hsl(45, 100%, 51%);
+  border-color: hsl(45, 100%, 51%);
+
+}
+
+/* Mufabrak: tertiary branding background with white text */
+.type-mufabrak {
+  background: hsl(261, 51%, 98%);
+  color: hsl(261, 51%, 51%);
+  border-color: hsl(261, 51%, 51%);
+}
+
+/* Qadim: muted grey background with white text */
+.type-qadim {
+  background: hsl(210, 5%, 38%);
+  color: hsl(210, 5%, 98%);
+  border-color: hsl(210, 5%, 98%);
+}
+
+/* Tawdi7: secondary brand blue background with white text */
+.type-tawdi7 {
+  background: hsl(214, 100%, 98%);
+  color: hsl(214, 100%, 50%);
+  border-color: hsl(214, 100%, 50%);
+}
+
+
+.type-ta2kid {
+  background: hsl(134, 61%, 98%);
+  color: hsl(134, 61%, 41%);
+  border-color: hsl(134, 61%, 41%);
+}
+
+/* 4) Category–specific colors */
+/* add class e.g. <a class="article-card__label article-card__label--category cat-siyasa">سياسة</a> */
+.cat-tahqiqat {
+  background: hsl(203, 100%, 98%);
+  color: hsl(203, 100%, 30%);
+  border-color: hsl(203, 100%, 30%);
+}
+
+.cat-seha {
+  background: hsl(134, 61%, 98%);
+  color: hsl(134, 61%, 41%);
+  border-color: hsl(134, 61%, 41%);
+}
+
+.cat-siyasa {
+  background: hsl(214, 100%, 98%);
+  color: hsl(214, 100%, 41%);
+  border-color: hsl(214, 100%, 41%);
+}
+
+.cat-iqtisad {
+  background: hsl(261, 51%, 98%);
+  color: hsl(261, 51%, 51%);
+  border-color: hsl(261, 51%, 51%);
+}
+
+.cat-thaqafa {
+  background: hsl(332, 79%, 98%);
+  color: hsl(332, 79%, 58%);
+  border-color: hsl(332, 79%, 58%);
+}

@@ -1,0 +1,487 @@
+<head>
+  <!-- Character Encoding & Responsive -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Tags -->
+  <title>تيقّن | منصة للتحقّق من الأخبار والمعلومات وكشف الشائعات</title>
+  <meta name="description"
+    content="تيقّن: منصة مجتمعـية مستقلة للتحقق من الأخبار والمعلومات المنتشرة، تهدف لكشف الحقائق ومكافحة الشائعات بجودة ومصداقية عالية." />
+
+  <!-- Canonical & Sitemap -->
+  <!-- استبدلوا https://tiqen.org/ بالدومين الفعلي لمنصتكم -->
+  <link rel="canonical" href="https://tiqen.org/" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Language & RTL direction -->
+  <html lang="ar" dir="rtl" />
+
+  <!-- Alternates -->
+  <!-- إذا كان لديكم نسخة بالإنجليزية -->
+  <!-- <link rel="alternate" hreflang="en" href="https://tiqen.org/en/" /> -->
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:title" content="تيقّن | منصة للتحقّق من الأخبار والمعلومات" />
+  <meta property="og:description"
+    content="منصة تيقّن: مجتمع من الخبراء والمتطوعين للتحقق من الأخبار وكشف الشائعات بدقّة ومهنية." />
+  <meta property="og:url" content="https://tiqen.org/" />
+  <meta property="og:site_name" content="تيقّن" />
+  <!-- استبدلوا هذا المسار بصورة OG فعلية -->
+  <meta property="og:image" content="https://tiqen.org/img/og-image.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tiqen" />
+  <meta name="twitter:title" content="تيقّن | منصة للتحقّق من الأخبار والمعلومات" />
+  <meta name="twitter:description" content="منصة تيقّن: مجتمع للتحقق من الأخبار وكشف الشائعات بدقّة ومصداقية عالية." />
+  <meta name="twitter:image" content="https://tiqen.org/img/twitter-image.png" />
+
+  <!-- Structured Data: WebSite & Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "تيقّن",
+    "url": "https://tiqen.org/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tiqen.org/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "تيقّن",
+    "url": "https://tiqen.org/",
+    "logo": "https://tiqen.org/img/logo.svg",
+    "sameAs": [
+      "https://www.facebook.com/tiqen",
+      "https://twitter.com/tiqen",
+      "https://www.instagram.com/tiqen",
+      "https://www.youtube.com/tiqen"
+    ]
+  }
+  </script>
+
+  <!-- DNS Prefetch & Preconnect for Performance -->
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="assets/css/style.css" as="style" />
+  <link rel="preload" href="assets/js/script.js" as="script" />
+
+  <!-- Favicon & Manifest -->
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Loader markup -->
+  <div id="preloadr">
+    <!-- From Uiverse.io by JaydipPrajapati1910 -->
+    <div class="loader"></div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container ">
+      <!-- Brand logo -->
+      <a class="navbar-brand " href="/">
+        <img src="assets/img/logo.png" alt="تيقّن" class="navbar-logo" />
+      </a>
+
+      <!-- Mobile toggle button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible nav links -->
+      <div class="collapse navbar-collapse " id="mainNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+          <!-- Home link -->
+          <li class="nav-item px-2">
+            <a class="nav-link  active" href="#">الرئيسية</a>
+          </li>
+          <!-- News categories dropdown -->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle " href="#" id="newsDropdown" data-bs-toggle="dropdown">
+              تصنيفات الأخبار
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+              <li><a class="dropdown-item" href="#">الكل</a></li>
+              <li><a class="dropdown-item" href="#">زائف</a></li>
+              <li><a class="dropdown-item" href="#">مضلل</a></li>
+              <li><a class="dropdown-item" href="#">مفبرك</a></li>
+              <li><a class="dropdown-item" href="#">قديم</a></li>
+              <li><a class="dropdown-item" href="#">توضيح</a></li>
+              <li><a class="dropdown-item" href="#">تأكيد</a></li>
+            </ul>
+          </li>
+          <!-- Reports & news link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#reports">تقارير وأخبار</a>
+          </li>
+          <!-- About us link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#about">من نحن</a>
+          </li>
+          <!-- Contact link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#contact">تواصل معنا</a>
+          </li>
+        </ul>
+
+        <!-- Search button and report button -->
+        <div class="d-flex align-items-center gap-2">
+          <!-- Open search modal -->
+          <button class="btn btn-outline-primary p-2 btn-search" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search"></i>
+          </button>
+          <!-- Report claim button -->
+          <a href="#report" class="btn btn-primary text-white px-4">أبلغ عن إدعاء</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen search modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-surface p-4">
+        <!-- Modal header -->
+        <div class="modal-header border-0">
+          <h5 class="modal-title">ابحث في المقالات أو الكتاب</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Modal body with search form -->
+        <div class="modal-body d-flex flex-column align-items-center">
+          <form class="w-100" style="max-width:800px;">
+            <!-- Search input group -->
+            <div class="input-group input-group-lg mb-4">
+              <input type="text" class="form-control" placeholder="ابحث عن مقالات أو كتاب...">
+              <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Category filter -->
+            <div class="mb-3">
+              <label class="form-label">التصنيفات</label>
+              <select class="form-select">
+                <option>الكل</option>
+                <option>زائف</option>
+                <option>مضلل</option>
+                <option>مفبرك</option>
+                <option>قديم</option>
+                <option>توضيح</option>
+                <option>تأكيد</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="featured-articles">
+    <div class="container">
+      <div class="featured-articles__grid">
+
+        <!-- Card 1: spans left half, full height -->
+        <article class="article-card article-card--large">
+          <!-- article image -->
+          <img src="assets/img/articles/Horizontal/1.jpg" alt="Featured health study" class="article-card__image">
+
+          <!-- overlay with gradient -->
+          <div class="article-card__overlay">
+
+            <!-- Meta: type, category, date -->
+            <div class="article-card__meta justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <a href="#" class="article-card__label article-card__label--type type-zayef">زائف</a>
+                <a href="#" class="article-card__label article-card__label--category cat-seha">صحة</a>
+              </div>
+              <time datetime="2025-06-18" class="article-card__date">
+                <img src="assets/img/icons/icon-time-white.svg" alt=""> 18 يونيو 2025
+              </time>
+            </div>
+
+            <!-- Title -->
+            <h3 class="article-card__title">
+              <a href="#">دراسة طبية: الغذاء المتوازن يحسّن مناعة الجسم</a>
+            </h3>
+
+            <!-- Contributors: author(s) & publisher(s) -->
+            <div class="article-card__contributors">
+
+              <!-- Authors block -->
+              <div class="contributors__item contributors__item--author">
+                <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                <a href="#" class="contributors__label">
+                  د. سارة أحمد<span class="contributors__extra">+1</span>
+                </a>
+                <!-- full list on hover -->
+                <div class="contributors__dropdown">
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    د. سارة احمد
+                  </a>
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    محمد الخطيب
+                  </a>
+                </div>
+              </div>
+
+              <!-- Publishers block -->
+              <div class="contributors__item contributors__item--publisher">
+                <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                <span class="contributors__label">
+                  جامعة القاهرة<span class="contributors__extra">+1</span>
+                </span>
+                <!-- full list on hover -->
+                <div class="contributors__dropdown">
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    الجزيرة
+                  </a>
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    العربية
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: top right, half height -->
+        <article class="article-card article-card--medium">
+          <!-- article image -->
+          <img src="assets/img/articles/Horizontal/2.jpg" alt="Central bank clarification" class="article-card__image">
+
+          <!-- overlay with gradient -->
+          <div class="article-card__overlay">
+
+            <!-- Meta: type, category, date -->
+            <div class="article-card__meta justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+
+                <a href="#" class="article-card__label article-card__label--type type-tawdi7">توضيح</a>
+                <a href="#" class="article-card__label article-card__label--category cat-iqtisad">اقتصاد</a>
+              </div>
+              <time datetime="2025-05-10" class="article-card__date">
+                <img src="assets/img/icons/icon-time-white.svg" alt=""> 10 مايو 2025
+              </time>
+            </div>
+
+            <!-- Title -->
+            <h3 class="article-card__title">
+              <a href="#">البنك المركزي يوضح أسباب انخفاض قيمة الجنيه</a>
+            </h3>
+
+            <!-- Contributors: author(s) & publisher(s) -->
+            <div class="article-card__contributors">
+
+              <!-- Authors block -->
+              <div class="contributors__item contributors__item--author">
+                <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                <a href="#" class="contributors__label">
+                  خالد محمود<span class="contributors__extra">+2</span>
+                </a>
+                <!-- full list on hover -->
+                <div class="contributors__dropdown">
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <span>خالد محمود</span>
+                  </a>
+                  <a href="#">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span>ليلى حسن</span>
+                  </a>
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <span>عمار يوسف</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Publishers block -->
+              <div class="contributors__item contributors__item--publisher">
+                <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                <a class="contributors__label">
+                  مصرف السودان المركزي<span class="contributors__extra">+1</span>
+                </a>
+                <!-- full list on hover -->
+                <div class="contributors__dropdown">
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <span>مصرف السودان المركزي</span> </a>
+                  <a href="#">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span>مجلة الاقتصاد</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: bottom right, left half of subgrid -->
+        <article class="article-card">
+          <!-- article image -->
+          <img src="assets/img/articles/Square/9.jpg" alt="Social media investigation" class="article-card__image">
+
+          <!-- overlay with gradient -->
+          <div class="article-card__overlay">
+
+            <!-- Meta: type, category, date -->
+            <div class="article-card__meta justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+
+                <a href="#" class="article-card__label article-card__label--type type-mudallal">مضلل</a>
+                <a href="#" class="article-card__label article-card__label--category cat-tahqiqat">تحقيقات</a>
+              </div>
+              <time datetime="2025-04-22" class="article-card__date">
+                <img src="assets/img/icons/icon-time-white.svg" alt=""> 22 أبريل 2025
+              </time>
+            </div>
+
+            <!-- Title -->
+            <h3 class="article-card__title">
+              <a href="#">تحقيق: شبكات التواصل ودورها في نشر المعلومات المضللة</a>
+            </h3>
+
+            <!-- Contributors: author(s) & publisher(s) -->
+            <div class="article-card__contributors">
+
+              <!-- Authors block -->
+              <div class="contributors__item contributors__item--author">
+                <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                <a href="#" class="contributors__label">
+                  ليلى حسن<span class="contributors__extra">+1</span>
+                </a>
+                <!-- full list on hover -->
+                <div class="contributors__dropdown">
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <span>ليلى حسن</span> </a>
+                  <a href="#">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span>أحمد زيدان</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Publishers block -->
+              <div class="contributors__item contributors__item--publisher">
+                <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                <span class="contributors__label">
+                  مركز الجزيرة<span class="contributors__extra">+1</span>
+                </span>
+                <!-- full list on hover -->
+                <div class="contributors__dropdown">
+                  <a href="#">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <span>مركز مبادرة الشفافية</span> </a>
+                  <a href="#">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span>منظمة صحافة</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: bottom right, right half of subgrid -->
+        <article class="article-card">
+          <!-- article image -->
+          <img src="assets/img/articles/Square/8.jpg" alt="Library celebration" class="article-card__image">
+
+          <!-- overlay with gradient -->
+          <div class="article-card__overlay">
+
+            <!-- Meta: type, category, date -->
+            <div class="article-card__meta justify-content-between">
+              <div class="d-flex align-items-center gap-2">
+                <a href="#" class="article-card__label article-card__label--type type-ta2kid">تأكيد</a>
+                <a href="#" class="article-card__label article-card__label--category cat-thaqafa">ثقافة</a>
+              </div>
+              <time datetime="2025-03-15" class="article-card__date">
+                <img src="assets/img/icons/icon-time-white.svg" alt=""> 15 مارس 2025
+              </time>
+            </div>
+
+            <!-- Title -->
+            <h3 class="article-card__title">
+              <a href="#">تأكيد: مكتبة الإسكندرية تحتفل باليوم العالمي للكتاب</a>
+            </h3>
+
+            <!-- Contributors: author(s) & publisher(s) -->
+            <div class="article-card__contributors">
+
+              <!-- Authors block -->
+              <div class="contributors__item contributors__item--author">
+                <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                <span class="contributors__label">
+                  عمر علي<span class="contributors__extra">+1</span>
+                </span>
+                <!-- full list on hover -->
+                <div class="contributors__dropdown">
+                  <span>عمر علي</span>
+                  <span>ريم يوسف</span>
+                </div>
+              </div>
+
+              <!-- Publishers block -->
+              <div class="contributors__item contributors__item--publisher">
+                <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                <span class="contributors__label">
+                  مكتبة الإسكندرية<span class="contributors__extra">+1</span>
+                </span>
+                <!-- full list on hover -->
+                <div class="contributors__dropdown">
+                  <span>مكتبة الإسكندرية</span>
+                  <span>الهيئة العامة للكتاب</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- JavaScript Files: jQuery, Carousel, GSAP (for animations), Bootstrap, and custom scripts -->
+  <script src=" assets/js/jquery-3.7.1.min.js" type="text/javascript">
+  </script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+  <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="assets/js/animation.js" type="text/javascript"></script>
+  <script src="assets/js/script.js" type="text/javascript" defer></script>
+</body>
+
+</html>
