@@ -198,7 +198,7 @@
     </div>
   </div>
 
-  <section class="featured-articles">
+  <section class="featured-articles section">
     <div class="container">
       <div class="featured-articles__grid">
 
@@ -474,11 +474,584 @@
   </section>
 
 
-  <!-- JavaScript Files: jQuery, Carousel, GSAP (for animations), Bootstrap, and custom scripts -->
-  <script src=" assets/js/jquery-3.7.1.min.js" type="text/javascript">
-  </script>
-  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <section class="breaking-news section ">
+    <div class="container">
+      <!-- Section title -->
+      <h2 class="section-title-breaking">الأخبار العاجلة</h2>
 
+      <!-- Owl Carousel wrapper -->
+      <div class="breaking-news__container">
+        <div class="owl-carousel breaking-news__carousel">
+
+          <!-- Slide 1 -->
+          <article class="breaking-news__item">
+            <img src="assets/img/articles/Horizontal/1.jpg" alt="نتائج بحث صحي" class="breaking-news__image rounded">
+            <div class="breaking-news__content p-3">
+              <div class="breaking-news__meta d-flex align-items-center gap-2 mb-2">
+                <img src="assets/img/icons/icon-time.svg" alt="" class="breaking-news__time-icon">
+                <time datetime="2025-07-01" class="breaking-news__date">1 يوليو 2025</time>
+              </div>
+              <h3 class="breaking-news__title">
+                <a href="#">دراسة جديدة: أهمية التطعيم في تقوية المناعة</a>
+              </h3>
+            </div>
+          </article>
+
+          <!-- Slide 2 -->
+          <article class="breaking-news__item">
+            <img src="assets/img/articles/Horizontal/3.jpg" alt="تأثير السوشيال ميديا"
+              class="breaking-news__image rounded">
+            <div class="breaking-news__content p-3">
+              <div class="breaking-news__meta d-flex align-items-center gap-2 mb-2">
+                <img src="assets/img/icons/icon-time.svg" alt="" class="breaking-news__time-icon">
+                <time datetime="2025-06-28" class="breaking-news__date">28 يونيو 2025</time>
+              </div>
+              <h3 class="breaking-news__title">
+                <a href="#">تقرير: التواصل الاجتماعي وتأثيره على الصحة النفسية</a>
+              </h3>
+            </div>
+          </article>
+
+          <!-- Slide 3 -->
+          <article class="breaking-news__item">
+            <img src="assets/img/articles/Horizontal/2.jpg" alt="دواء جديد" class="breaking-news__image rounded">
+            <div class="breaking-news__content p-3">
+              <div class="breaking-news__meta d-flex align-items-center gap-2 mb-2">
+                <img src="assets/img/icons/icon-time.svg" alt="" class="breaking-news__time-icon">
+                <time datetime="2025-06-25" class="breaking-news__date">25 يونيو 2025</time>
+              </div>
+              <h3 class="breaking-news__title">
+                <a href="#">عاجل: اكتشاف دواء جديد مضاد للفيروسات</a>
+              </h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top highlights section -->
+  <section class="top-highlights section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-title">أهم أحداث اليوم </h2>
+        </div>
+        <div class="col-md-9">
+
+          <div class="top-highlights__grid">
+            <!-- Card 1: spans left half, full height -->
+            <article class="regular-article-card">
+              <!-- article image -->
+              <img src="assets/img/articles/Horizontal/1.jpg" alt="Featured health study" class="article-card__image">
+              <a href="#" class="custom-badge badge-ta2kid" data-label="تأكيد"></a>
+
+
+              <!-- overlay with gradient -->
+              <div class="article-card__body">
+
+                <!-- Meta: type, category, date -->
+                <div class="article-card__meta justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="article-card__label article-card__label--type type-ta2kid">تأكيد</a>
+                    <a href="#" class="article-card__label article-card__label--category cat-taghazul">تكنولوجيا</a>
+                  </div>
+                  <time datetime="2025-06-18" class="article-card__date">
+                    <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                  </time>
+                </div>
+
+                <!-- Title -->
+                <h3 class="article-card__title">
+                  <a href="#">تأكيد: إطلاق تحديث أمني جديد لنظام التشغيل</a>
+                </h3>
+
+                <!-- Contributors: author(s) & publisher(s) -->
+                <div class="article-card__contributors">
+
+                  <!-- Authors block -->
+                  <div class="contributors__item contributors__item--author">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <a href="#" class="contributors__label">
+                      د. سارة أحمد<span class="contributors__extra">+1</span>
+                    </a>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        د. سارة احمد
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        محمد الخطيب
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Publishers block -->
+                  <div class="contributors__item contributors__item--publisher">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span class="contributors__label">
+                      جامعة القاهرة<span class="contributors__extra">+1</span>
+                    </span>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        الجزيرة
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        العربية
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+            <article class="regular-article-card">
+              <!-- article image -->
+              <img src="assets/img/articles/Horizontal/2.jpg" alt="Featured health study" class="article-card__image">
+              <a href="#" class="custom-badge badge-tawdi7" data-label="توضيح"></a>
+
+              <!-- overlay with gradient -->
+              <div class="article-card__body">
+
+                <!-- Meta: type, category, date -->
+                <div class="article-card__meta justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="article-card__label article-card__label--type type-tawdi7">توضيح</a>
+                    <a href="#" class="article-card__label article-card__label--category cat-bi2a">بيئة</a>
+                  </div>
+                  <time datetime="2025-06-18" class="article-card__date">
+                    <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                  </time>
+                </div>
+
+                <!-- Title -->
+                <h3 class="article-card__title">
+                  <a href="#">دراسة طبية: الغذاء المتوازن يحسّن مناعة الجسم</a>
+                </h3>
+
+                <!-- Contributors: author(s) & publisher(s) -->
+                <div class="article-card__contributors">
+
+                  <!-- Authors block -->
+                  <div class="contributors__item contributors__item--author">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <a href="#" class="contributors__label">
+                      د. سارة أحمد<span class="contributors__extra">+1</span>
+                    </a>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        د. سارة احمد
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        محمد الخطيب
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Publishers block -->
+                  <div class="contributors__item contributors__item--publisher">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span class="contributors__label">
+                      جامعة القاهرة<span class="contributors__extra">+1</span>
+                    </span>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        الجزيرة
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        العربية
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+            <article class="regular-article-card">
+              <!-- article image -->
+              <img src="assets/img/articles/Square/1.jpg" alt="Featured health study" class="article-card__image">
+              <a href="#" class="custom-badge badge-zayef" data-label="زائف"></a>
+
+              <!-- overlay with gradient -->
+              <div class="article-card__body">
+
+                <!-- Meta: type, category, date -->
+                <div class="article-card__meta justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="article-card__label article-card__label--type type-zayef">زائف</a>
+                    <a href="#" class="article-card__label article-card__label--category cat-riyada">رياضة</a>
+                  </div>
+                  <time datetime="2025-06-18" class="article-card__date">
+                    <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                  </time>
+                </div>
+
+                <!-- Title -->
+                <h3 class="article-card__title">
+                  <a href="#">دراسة طبية: الغذاء المتوازن يحسّن مناعة الجسم</a>
+                </h3>
+
+                <!-- Contributors: author(s) & publisher(s) -->
+                <div class="article-card__contributors">
+
+                  <!-- Authors block -->
+                  <div class="contributors__item contributors__item--author">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <a href="#" class="contributors__label">
+                      د. سارة أحمد<span class="contributors__extra">+1</span>
+                    </a>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        د. سارة احمد
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        محمد الخطيب
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Publishers block -->
+                  <div class="contributors__item contributors__item--publisher">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span class="contributors__label">
+                      جامعة القاهرة<span class="contributors__extra">+1</span>
+                    </span>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        الجزيرة
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        العربية
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+            <article class="regular-article-card">
+              <!-- article image -->
+              <img src="assets/img/articles/Square/2.jpg" alt="Featured health study" class="article-card__image">
+              <a href="#" class="custom-badge badge-mudallal" data-label="مضلل"></a>
+
+              <!-- overlay with gradient -->
+              <div class="article-card__body">
+
+                <!-- Meta: type, category, date -->
+                <div class="article-card__meta justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="article-card__label article-card__label--type type-mudallal">مضلل</a>
+                    <a href="#" class="article-card__label article-card__label--category cat-thaqafa">ثقافة</a>
+                  </div>
+                  <time datetime="2025-06-18" class="article-card__date">
+                    <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                  </time>
+                </div>
+
+                <!-- Title -->
+                <h3 class="article-card__title">
+                  <a href="#">دراسة طبية: الغذاء المتوازن يحسّن مناعة الجسم</a>
+                </h3>
+
+                <!-- Contributors: author(s) & publisher(s) -->
+                <div class="article-card__contributors">
+
+                  <!-- Authors block -->
+                  <div class="contributors__item contributors__item--author">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <a href="#" class="contributors__label">
+                      د. سارة أحمد<span class="contributors__extra">+1</span>
+                    </a>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        د. سارة احمد
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        محمد الخطيب
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Publishers block -->
+                  <div class="contributors__item contributors__item--publisher">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span class="contributors__label">
+                      جامعة القاهرة<span class="contributors__extra">+1</span>
+                    </span>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        الجزيرة
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        العربية
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+            <article class="regular-article-card">
+              <!-- article image -->
+              <img src="assets/img/articles/Square/7.jpg" alt="Featured health study" class="article-card__image">
+              <a href="#" class="custom-badge badge-qadim" data-label="قديم"></a>
+
+              <!-- overlay with gradient -->
+              <div class="article-card__body">
+
+                <!-- Meta: type, category, date -->
+                <div class="article-card__meta justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="article-card__label article-card__label--type type-qadim">قديم</a>
+                    <a href="#" class="article-card__label article-card__label--category cat-ta3leem">تعليم</a>
+                  </div>
+                  <time datetime="2025-06-18" class="article-card__date">
+                    <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                  </time>
+                </div>
+
+                <!-- Title -->
+                <h3 class="article-card__title">
+                  <a href="#">دراسة طبية: الغذاء المتوازن يحسّن مناعة الجسم</a>
+                </h3>
+
+                <!-- Contributors: author(s) & publisher(s) -->
+                <div class="article-card__contributors">
+
+                  <!-- Authors block -->
+                  <div class="contributors__item contributors__item--author">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <a href="#" class="contributors__label">
+                      د. سارة أحمد<span class="contributors__extra">+1</span>
+                    </a>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        د. سارة احمد
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        محمد الخطيب
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Publishers block -->
+                  <div class="contributors__item contributors__item--publisher">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span class="contributors__label">
+                      جامعة القاهرة<span class="contributors__extra">+1</span>
+                    </span>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        الجزيرة
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        العربية
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+            <article class="regular-article-card">
+              <!-- article image -->
+              <img src="assets/img/articles/Square/6.jpg" alt="Featured health study" class="article-card__image">
+              <a href="#" class="custom-badge badge-mufabrak" data-label="مفبرك"></a>
+
+              <!-- overlay with gradient -->
+              <div class="article-card__body">
+
+                <!-- Meta: type, category, date -->
+                <div class="article-card__meta justify-content-between">
+                  <div class="d-flex align-items-center gap-2">
+                    <a href="#" class="article-card__label article-card__label--type type-mufabrak">مفبرك</a>
+                    <a href="#" class="article-card__label article-card__label--category cat-siyasa">سياسة</a>
+                  </div>
+                  <time datetime="2025-06-18" class="article-card__date">
+                    <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                  </time>
+                </div>
+
+                <!-- Title -->
+                <h3 class="article-card__title">
+                  <a href="#">دراسة طبية: الغذاء المتوازن يحسّن مناعة الجسم</a>
+                </h3>
+
+                <!-- Contributors: author(s) & publisher(s) -->
+                <div class="article-card__contributors">
+
+                  <!-- Authors block -->
+                  <div class="contributors__item contributors__item--author">
+                    <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                    <a href="#" class="contributors__label">
+                      د. سارة أحمد<span class="contributors__extra">+1</span>
+                    </a>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        د. سارة احمد
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        محمد الخطيب
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Publishers block -->
+                  <div class="contributors__item contributors__item--publisher">
+                    <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                    <span class="contributors__label">
+                      جامعة القاهرة<span class="contributors__extra">+1</span>
+                    </span>
+                    <!-- full list on hover -->
+                    <div class="contributors__dropdown">
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        الجزيرة
+                      </a>
+                      <a href="#">
+                        <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                        العربية
+                      </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="blog-sidebar">
+            <div class="widget category-widget">
+              <h3>المواضيع الشائعة</h3>
+              <ul>
+                <li><a href="#">كل الأخبار <span>(150)</span></a></li>
+                <li><a href="#">زائف <span>(30)</span></a></li>
+                <li><a href="#">مضلل <span>(45)</span></a></li>
+                <li><a href="#">مفبرك <span>(20)</span></a></li>
+                <li><a href="#">قديم <span>(25)</span></a></li>
+                <li><a href="#">توضيح <span>(15)</span></a></li>
+                <li><a href="#">تأكيد <span>(10)</span></a></li>
+              </ul>
+
+            </div>
+            <div class="widget recent-post-widget">
+              <h3>الأكثر قراءة</h3>
+              <div class="posts">
+
+                <!-- Post 1 -->
+                <div class="post">
+                  <div class="img-holder">
+                    <img src="assets/img/articles/Horizontal/1.jpg" alt="اختيار الأثاث المناسب">
+                  </div>
+                  <div class="details">
+                    <span class="date">5 يوليو 2025</span>
+                    <h4><a href="#">5 أسرار لاختيار الأثاث المناسب لمنزلك</a></h4>
+                  </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="post">
+                  <div class="img-holder">
+                    <img src="assets/img/articles/Horizontal/2.jpg" alt="روتين صحي متكامل">
+                  </div>
+                  <div class="details">
+                    <span class="date">1 يوليو 2025</span>
+                    <h4><a href="#">روتين صحي لحياة متوازنة</a></h4>
+                  </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="post">
+                  <div class="img-holder">
+                    <img src="assets/img/articles/Square/3.jpg" alt="وجهات سياحية">
+                  </div>
+                  <div class="details">
+                    <span class="date">28 يونيو 2025</span>
+                    <h4><a href="#">أفضل وجهات سياحية حول العالم</a></h4>
+                  </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="post">
+                  <div class="img-holder">
+                    <img src="assets/img/articles/Square/4.jpg" alt="أطعمة صحية">
+                  </div>
+                  <div class="details">
+                    <span class="date">25 يونيو 2025</span>
+                    <h4><a href="#">أفضل 10 أطعمة صحية لقائمتك</a></h4>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="fixed-btn ">
+    <a href="#" class="btn-whatsapp">
+      <div class="sign">
+        <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+          </path>
+        </svg>
+      </div>
+
+      <div class="text">اتصل الان</div>
+    </a>
+
+  </div>
+
+
+  <!-- JavaScript Files: jQuery, Carousel, GSAP (for animations), Bootstrap, and custom scripts -->
+  <script src=" assets/js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
   <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <script src="assets/js/animation.js" type="text/javascript"></script>
   <script src="assets/js/script.js" type="text/javascript" defer></script>

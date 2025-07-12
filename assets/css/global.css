@@ -154,8 +154,13 @@ a {
   color: inherit;
   text-decoration: none;
   transition: color 0.3s ease;
+  line-height: 1.2;
 }
 
+span {
+  line-height: 1.2;
+
+}
 
 /* Buttons */
 .btn {
@@ -169,6 +174,7 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
   height: 40px;
+  line-height: 1.2;
 }
 
 .btn-primary {
@@ -214,7 +220,7 @@ a {
 }
 
 .section {
-  padding: var(--space-xl) 0;
+  padding: var(--container-padding-vertical) 0;
 }
 
 input::placeholder {
@@ -341,4 +347,211 @@ ul {
     transform: rotate(360deg);
     background-position: 50% 36px;
   }
+}
+
+
+.fixed-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* From Uiverse.io by Gaurang7717 */
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #00d757;
+}
+
+.btn-whatsapp .sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-whatsapp .sign svg {
+  width: 25px;
+}
+
+.btn-whatsapp .sign svg path {
+  fill: white;
+}
+
+.btn-whatsapp .text {
+  position: absolute;
+  left: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-whatsapp:hover {
+  width: 130px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+.btn-whatsapp:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+
+.btn-whatsapp:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+
+.btn-whatsapp:active {
+  transform: translate(2px, 2px);
+}
+
+
+.custom-badge {
+  position: absolute;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-badge::before {
+  content: attr(data-label);
+  color: var(--color-primary);
+
+  position: absolute;
+  width: 150%;
+  height: 30px;
+  /* ribbon gradient: light rose → primary → deep rose */
+  background: hsl(2, 64%, 58%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-xs);
+  color: #fff;
+}
+
+.badge-zayef::before {
+  background: hsl(2, 64%, 58%);
+}
+
+.badge-mudallal::before {
+  background: hsl(45, 100%, 51%);
+}
+
+.badge-mufabrak::before {
+  background: hsl(261, 51%, 51%);
+}
+
+.badge-qadim::before {
+  background: hsl(210, 5%, 38%);
+}
+
+.badge-tawdi7::before {
+  background: hsl(214, 100%, 50%);
+}
+
+.badge-ta2kid::before {
+  background: hsl(134, 61%, 41%);
+}
+
+
+.type-zayef {
+  background: hsl(2, 64%, 98%);
+  color: hsl(2, 64%, 58%);
+  border-color: hsl(2, 64%, 80%);
+}
+
+.type-mudallal {
+  background: hsl(45, 100%, 98%);
+  color: hsl(45, 100%, 51%);
+  border-color: hsl(45, 100%, 80%);
+
+}
+
+/* Mufabrak: tertiary branding background with white text */
+.type-mufabrak {
+  background: hsl(261, 51%, 98%);
+  color: hsl(261, 51%, 51%);
+  border-color: hsl(261, 51%, 80%);
+}
+
+/* Qadim: muted grey background with white text */
+.type-qadim {
+  background: hsl(210, 5%, 98%);
+  color: hsl(210, 5%, 38%);
+  border-color: hsl(210, 5%, 80%);
+}
+
+/* Tawdi7: secondary brand blue background with white text */
+.type-tawdi7 {
+  background: hsl(214, 100%, 98%);
+  color: hsl(214, 100%, 50%);
+  border-color: hsl(214, 100%, 80%);
+}
+
+
+.type-ta2kid {
+  background: hsl(134, 61%, 98%);
+  color: hsl(134, 61%, 41%);
+  border-color: hsl(134, 61%, 80%);
+}
+
+/* 4) Category–specific colors */
+/* add class e.g. <a class="article-card__label article-card__label--category cat-siyasa">سياسة</a> */
+.cat-tahqiqat {
+  background: hsl(203, 100%, 98%);
+  color: hsl(203, 100%, 30%);
+  border-color: hsl(203, 100%, 80%);
+}
+
+.cat-seha {
+  background: hsl(134, 61%, 98%);
+  color: hsl(134, 61%, 41%);
+  border-color: hsl(134, 61%, 80%);
+}
+
+.cat-siyasa {
+  background: hsl(214, 100%, 98%);
+  color: hsl(214, 100%, 41%);
+  border-color: hsl(214, 100%, 80%);
+}
+
+.cat-iqtisad {
+  background: hsl(261, 51%, 98%);
+  color: hsl(261, 51%, 51%);
+  border-color: hsl(261, 51%, 80%);
+}
+
+.cat-thaqafa {
+  background: hsl(332, 79%, 98%);
+  color: hsl(332, 79%, 58%);
+  border-color: hsl(332, 79%, 80%);
 }

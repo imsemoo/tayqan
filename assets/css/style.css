@@ -85,9 +85,7 @@ body {
 
 /*Start Main-feat-articles*/
 
-.featured-articles {
-  padding: var(--container-padding-vertical) 0;
-}
+
 
 .featured-articles__grid {
   display: grid;
@@ -307,7 +305,7 @@ body {
   border-radius: 4px;
   background: #EEEEEE;
   height: 25px;
-  border-right: 3px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
 
 
 }
@@ -321,13 +319,13 @@ body {
 .type-zayef {
   background: hsl(2, 64%, 98%);
   color: hsl(2, 64%, 58%);
-  border-color: hsl(2, 64%, 58%);
+  border-color: hsl(2, 64%, 80%);
 }
 
 .type-mudallal {
   background: hsl(45, 100%, 98%);
   color: hsl(45, 100%, 51%);
-  border-color: hsl(45, 100%, 51%);
+  border-color: hsl(45, 100%, 80%);
 
 }
 
@@ -335,28 +333,28 @@ body {
 .type-mufabrak {
   background: hsl(261, 51%, 98%);
   color: hsl(261, 51%, 51%);
-  border-color: hsl(261, 51%, 51%);
+  border-color: hsl(261, 51%, 80%);
 }
 
 /* Qadim: muted grey background with white text */
 .type-qadim {
-  background: hsl(210, 5%, 38%);
-  color: hsl(210, 5%, 98%);
-  border-color: hsl(210, 5%, 98%);
+  color: hsl(210, 5%, 38%);
+  background: hsl(210, 5%, 96%);
+  border-color: hsl(210, 5%, 80%);
 }
 
 /* Tawdi7: secondary brand blue background with white text */
 .type-tawdi7 {
   background: hsl(214, 100%, 98%);
   color: hsl(214, 100%, 50%);
-  border-color: hsl(214, 100%, 50%);
+  border-color: hsl(214, 100%, 80%);
 }
 
 
 .type-ta2kid {
   background: hsl(134, 61%, 98%);
   color: hsl(134, 61%, 41%);
-  border-color: hsl(134, 61%, 41%);
+  border-color: hsl(134, 61%, 80%);
 }
 
 /* 4) Category–specific colors */
@@ -364,29 +362,340 @@ body {
 .cat-tahqiqat {
   background: hsl(203, 100%, 98%);
   color: hsl(203, 100%, 30%);
-  border-color: hsl(203, 100%, 30%);
+  border-color: hsl(203, 100%, 80%);
 }
 
 .cat-seha {
   background: hsl(134, 61%, 98%);
   color: hsl(134, 61%, 41%);
-  border-color: hsl(134, 61%, 41%);
+  border-color: hsl(134, 61%, 80%);
 }
 
 .cat-siyasa {
   background: hsl(214, 100%, 98%);
   color: hsl(214, 100%, 41%);
-  border-color: hsl(214, 100%, 41%);
+  border-color: hsl(214, 100%, 80%);
 }
 
 .cat-iqtisad {
   background: hsl(261, 51%, 98%);
   color: hsl(261, 51%, 51%);
-  border-color: hsl(261, 51%, 51%);
+  border-color: hsl(261, 51%, 80%);
 }
 
 .cat-thaqafa {
   background: hsl(332, 79%, 98%);
   color: hsl(332, 79%, 58%);
-  border-color: hsl(332, 79%, 58%);
+  border-color: hsl(332, 79%, 80%);
+}
+
+/* Breaking News Section */
+.breaking-news .section-title-breaking {
+
+  font-size: 15px;
+  padding: 5px 10px;
+  background: var(--color-primary);
+  display: inline-block;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.breaking-news__container {
+  background: hsl(349, 51%, 98%);
+  border-top: 1px solid hsl(349, 51%, 90%);
+  border-bottom: 1px solid hsl(349, 51%, 90%);
+  padding: 0;
+  border-radius: 16px 0 16px 16px;
+  overflow: hidden;
+}
+
+/* Carousel item */
+.breaking-news__item {
+
+  display: flex;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  border-left: 1px solid hsl(349, 51%, 90%);
+  border-right: 1px solid hsl(349, 51%, 90%);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: -1px;
+  border-radius: 0;
+}
+
+/* Image */
+.breaking-news__image {
+  width: 105px !important;
+  height: 105px;
+  object-fit: cover;
+
+  border-radius: 6px;
+}
+
+
+/* Meta (date + icon) */
+.breaking-news__meta {
+  align-items: center;
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+}
+
+.breaking-news__time-icon {
+  margin-top: 2px;
+
+  width: 20px !important;
+  height: auto;
+}
+
+/* Title */
+.breaking-news__title {
+  font-size: var(--font-md);
+  margin: 0;
+}
+
+.breaking-news__title a {
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breaking-news__title a:hover {
+  color: var(--color-primary);
+}
+
+/* Owl nav buttons override */
+.owl-nav button {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: var(--space-xxs) var(--space-xs);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-nav .owl-prev {
+  right: calc(100% + var(--space-sm));
+}
+
+.owl-nav .owl-next {
+  left: calc(100% + var(--space-sm));
+}
+
+.section-title {
+  font-size: 30px;
+  line-height: 1em;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  margin-top: 0px;
+  position: relative;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+}
+
+.section-title:before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 5px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  content: "";
+}
+
+.section-title:after {
+  position: absolute;
+  right: 110px;
+  bottom: 0;
+  width: 30px;
+  height: 5px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  content: "";
+}
+
+.top-highlights__grid {
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.regular-article-card .article-card__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.regular-article-card .article-card__body {
+  padding: 20px 0;
+  background: transparent;
+  color: var(--text-primary);
+  display: flex;
+  flex-flow: column;
+  gap: var(--font-xs);
+
+}
+
+.regular-article-card .article-card__body .article-card__title a {
+  color: inherit;
+}
+
+.regular-article-card .article-card__body .article-card__date,
+.regular-article-card .article-card__body .contributors__label {
+  color: var(--text-muted);
+}
+
+.article-card__date img {
+  margin-top: 2px;
+
+  width: 20px !important;
+  height: auto;
+}
+
+
+
+.regular-article-card {
+  position: relative;
+}
+
+.blog-sidebar {}
+
+.blog-sidebar .widget {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #eef0fc;
+}
+
+.blog-sidebar .widget h3 {
+  font-size: 1.53333rem;
+  color: var(--text-primary);
+  margin: 0 0 1.3em;
+  position: relative;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+.blog-sidebar .widget h3:before {
+  content: "";
+  background-color: var(--color-primary);
+  width: 55px;
+  height: 4px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.blog-sidebar .widget h3:after {
+  content: "";
+  background-color: #f2f2f2;
+  width: 75%;
+  height: 4px;
+  position: absolute;
+  right: 65px;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.blog-sidebar .category-widget ul li {
+  font-size: var(--font-md);
+  position: relative;
+}
+
+.blog-sidebar .category-widget ul a {
+  display: block;
+  color: var(--text-muted);
+  position: relative;
+  padding-right: 30px;
+}
+
+.blog-sidebar .category-widget ul a::before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-40%);
+  font-size: 15px;
+  color: var(--text-muted);
+
+}
+
+.blog-sidebar .category-widget ul>li+li {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eef0fc;
+}
+
+.blog-sidebar .category-widget ul a span {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.blog-sidebar .category-widget ul li span {
+  position: absolute;
+  left: 0;
+}
+
+.blog-sidebar .recent-post-widget .post {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.blog-sidebar .recent-post-widget .post .img-holder {
+  width: 70px;
+
+}
+
+.blog-sidebar .recent-post-widget .post .img-holder img {
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.blog-sidebar .recent-post-widget .post .details {
+  width: calc(100% - 70px);
+  padding-right: 16px;
+}
+
+.blog-sidebar .recent-post-widget .post .details .date {
+  font-size: var(--font-xs);
+  color: var(--text-primary);
+  position: relative;
+  top: -2px;
+}
+
+.blog-sidebar .recent-post-widget .post h4 {
+  font-size: var(--font-sm);
+  font-weight: 500;
+  line-height: 1.3em;
+  margin: 0.3em 0 0;
+}
+
+.blog-sidebar .recent-post-widget .post h4 a {
+  display: inline-block;
+  color: #232f4b;
+}
+
+.blog-sidebar .recent-post-widget .posts>.post+.post {
+  margin-top: 15px;
+  padding-top: 15px;
 }
