@@ -699,3 +699,156 @@ body {
   margin-top: 15px;
   padding-top: 15px;
 }
+
+
+/*Start Footer*/
+
+.wpo-site-footer {
+  background: var(--color-dark);
+  position: relative;
+  font-size: var(--font-sm);
+  overflow: hidden;
+}
+
+.wpo-site-footer .wpo-upper-footer {
+  padding: 40px 0 30px;
+}
+
+.wpo-site-footer .about-widget .logo {
+  max-width: 120px;
+}
+
+.wpo-site-footer .widget-title {
+  margin-bottom: 30px;
+}
+
+.wpo-site-footer p {
+  color: #fff;
+  font-weight: 500;
+  font-size: var(--font-sm);
+}
+
+.wpo-site-footer .link-widget {
+  overflow: hidden;
+}
+
+.wpo-site-footer .widget-title {
+  margin-bottom: 30px;
+}
+
+.wpo-site-footer .widget-title h3 {
+  font-size: var(--font-lg);
+  color: #fff;
+  margin: 0;
+  position: relative;
+  font-weight: 500;
+}
+
+.wpo-site-footer li {
+  color: #fff;
+}
+
+.wpo-site-footer .link-widget ul li {
+  position: relative;
+}
+
+.wpo-site-footer .link-widget ul li+li {
+  padding-top: 15px;
+}
+
+.wpo-site-footer .link-widget ul li a {
+  color: #fff;
+  font-size: var(--font-sm);
+}
+
+.wpo-site-footer .tag-widget ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.wpo-site-footer .tag-widget ul li a {
+  display: block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 16px;
+  color: #fff;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.wpo-site-footer .social-widget ul li a {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+
+
+/* Reset link background, keep text white */
+.wpo-site-footer .social-widget ul li a {
+  background: transparent !important;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: #fff;
+}
+
+/* Style only the icon container */
+.wpo-site-footer .social-widget ul li a i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: background 0.3s ease;
+  color: #fff;
+  background: #777;
+  margin-top: 5px;
+
+}
+
+/* Facebook */
+.wpo-site-footer .social-widget ul li a.facebook i {
+  background: #3b5998;
+}
+
+/* Twitter */
+.wpo-site-footer .social-widget ul li a.twitter i {
+  background: #1da1f2;
+}
+
+/* Instagram */
+.wpo-site-footer .social-widget ul li a.instagram i {
+  background: #e4405f;
+}
+
+/* YouTube */
+.wpo-site-footer .social-widget ul li a.youtube i {
+  background: #ff0000;
+}
+
+/* On hover: darken icon background */
+.wpo-site-footer .social-widget ul li a i:hover {
+  filter: brightness(0.9);
+}
+
+
+@media screen and (min-width: 1200px) {
+  .wpo-site-footer .link-widget {
+    padding-right: 75px;
+  }
+}
+
+.wpo-site-footer .wpo-lower-footer .row {
+  padding: 20px 0;
+  position: relative;
+}
