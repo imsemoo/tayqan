@@ -47,4 +47,37 @@ $(document).ready(function () {
     }
   });
 
+  $('#back-blog-slider').owlCarousel({
+    loop: true,
+    items: 3,
+    rtl: true,
+
+    margin: 20,
+    autoplay: false,
+    slideSpeed: 300,
+    nav: false,
+    dots: false,
+    center: false,
+    responsive: {
+      0: {
+        items: 1,
+        center: false,
+      },
+      575: {
+        items: 1,
+        center: false,
+      },
+      767: {
+        items: 2,
+        center: false,
+      },
+      1200: {
+        items: 3,
+      },
+    }
+  })
+
+
+
+
 });

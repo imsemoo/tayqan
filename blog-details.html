@@ -1,0 +1,678 @@
+<head>
+  <!-- Character Encoding & Responsive -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Tags -->
+  <title>تيقّن | منصة للتحقّق من الأخبار والمعلومات وكشف الشائعات</title>
+  <meta name="description"
+    content="تيقّن: منصة مجتمعـية مستقلة للتحقق من الأخبار والمعلومات المنتشرة، تهدف لكشف الحقائق ومكافحة الشائعات بجودة ومصداقية عالية." />
+
+  <!-- Canonical & Sitemap -->
+  <!-- استبدلوا https://tiqen.org/ بالدومين الفعلي لمنصتكم -->
+  <link rel="canonical" href="https://tiqen.org/" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Language & RTL direction -->
+  <html lang="ar" dir="rtl" />
+
+  <!-- Alternates -->
+  <!-- إذا كان لديكم نسخة بالإنجليزية -->
+  <!-- <link rel="alternate" hreflang="en" href="https://tiqen.org/en/" /> -->
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:title" content="تيقّن | منصة للتحقّق من الأخبار والمعلومات" />
+  <meta property="og:description"
+    content="منصة تيقّن: مجتمع من الخبراء والمتطوعين للتحقق من الأخبار وكشف الشائعات بدقّة ومهنية." />
+  <meta property="og:url" content="https://tiqen.org/" />
+  <meta property="og:site_name" content="تيقّن" />
+  <!-- استبدلوا هذا المسار بصورة OG فعلية -->
+  <meta property="og:image" content="https://tiqen.org/img/og-image.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tiqen" />
+  <meta name="twitter:title" content="تيقّن | منصة للتحقّق من الأخبار والمعلومات" />
+  <meta name="twitter:description" content="منصة تيقّن: مجتمع للتحقق من الأخبار وكشف الشائعات بدقّة ومصداقية عالية." />
+  <meta name="twitter:image" content="https://tiqen.org/img/twitter-image.png" />
+
+  <!-- Structured Data: WebSite & Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "تيقّن",
+    "url": "https://tiqen.org/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tiqen.org/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "تيقّن",
+    "url": "https://tiqen.org/",
+    "logo": "https://tiqen.org/img/logo.svg",
+    "sameAs": [
+      "https://www.facebook.com/tiqen",
+      "https://twitter.com/tiqen",
+      "https://www.instagram.com/tiqen",
+      "https://www.youtube.com/tiqen"
+    ]
+  }
+  </script>
+
+  <!-- DNS Prefetch & Preconnect for Performance -->
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="assets/css/style.css" as="style" />
+  <link rel="preload" href="assets/js/script.js" as="script" />
+
+  <!-- Favicon & Manifest -->
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Loader markup -->
+  <div id="preloadr">
+    <!-- From Uiverse.io by JaydipPrajapati1910 -->
+    <div class="loader"></div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container ">
+      <!-- Brand logo -->
+      <a class="navbar-brand " href="/">
+        <img src="assets/img/logo.png" alt="تيقّن" class="navbar-logo" />
+      </a>
+
+      <!-- Mobile toggle button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible nav links -->
+      <div class="collapse navbar-collapse " id="mainNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+          <!-- Home link -->
+          <li class="nav-item px-2">
+            <a class="nav-link  active" href="#">الرئيسية</a>
+          </li>
+          <!-- News categories dropdown -->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle " href="#" id="newsDropdown" data-bs-toggle="dropdown">
+              تصنيفات الأخبار
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+              <li><a class="dropdown-item" href="#">الكل</a></li>
+              <li><a class="dropdown-item" href="#">زائف</a></li>
+              <li><a class="dropdown-item" href="#">مضلل</a></li>
+              <li><a class="dropdown-item" href="#">مفبرك</a></li>
+              <li><a class="dropdown-item" href="#">قديم</a></li>
+              <li><a class="dropdown-item" href="#">توضيح</a></li>
+              <li><a class="dropdown-item" href="#">تأكيد</a></li>
+            </ul>
+          </li>
+          <!-- Reports & news link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#reports">تقارير وأخبار</a>
+          </li>
+          <!-- About us link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#about">من نحن</a>
+          </li>
+          <!-- Contact link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#contact">تواصل معنا</a>
+          </li>
+        </ul>
+
+        <!-- Search button and report button -->
+        <div class="d-flex align-items-center gap-2">
+          <!-- Open search modal -->
+          <button class="btn btn-outline-primary p-2 btn-search" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search"></i>
+          </button>
+          <!-- Report claim button -->
+          <a href="#report" class="btn btn-primary text-white px-4">أبلغ عن إدعاء</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen search modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-surface p-4">
+        <!-- Modal header -->
+        <div class="modal-header border-0">
+          <h5 class="modal-title">ابحث في المقالات أو الكتاب</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Modal body with search form -->
+        <div class="modal-body d-flex flex-column align-items-center">
+          <form class="w-100" style="max-width:800px;">
+            <!-- Search input group -->
+            <div class="input-group input-group-lg mb-4">
+              <input type="text" class="form-control" placeholder="ابحث عن مقالات أو كتاب...">
+              <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Category filter -->
+            <div class="mb-3">
+              <label class="form-label">التصنيفات</label>
+              <select class="form-select">
+                <option>الكل</option>
+                <option>زائف</option>
+                <option>مضلل</option>
+                <option>مفبرك</option>
+                <option>قديم</option>
+                <option>توضيح</option>
+                <option>تأكيد</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="back-breadcrumbs">
+    <div class="breadcrumbs-wrap">
+      <div class="breadcrumbs-inner">
+        <div class="container">
+          <div class="breadcrumbs-text">
+            <h1 class="breadcrumbs-title">تفاصيل المقال</h1>
+            <div class="back-nav">
+              <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li>تفاصيل المقال</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back__blog__area back-blog-page back-blog-page-single pt-70 pb-60">
+    <div class="container back-max1100">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="blog-single-inner">
+            <div class="blog-content">
+
+              <!-- Featured image -->
+              <div class="blog-image">
+                <img src="assets/img/articles/Horizontal/1.jpg" alt="التحقق من الأخبار">
+              </div>
+
+              <!-- Article paragraphs -->
+              <p>
+                في عصر التواصل الاجتماعي وانتشار الخبر الكاذب، تُعدّ عملية التحقق من المعلومات قبل مشاركتها خطوة أساسية
+                للحفاظ على مصداقية المصادر وحماية المجتمع من التضليل.
+              </p>
+              <p>
+                تعتمد منصة “تيقّن” على فريق من الخبراء والمتطوعين لتدقيق الأخبار والشائعات، وضمان وصول الجمهور إلى
+                الحقيقة من خلال منهجية دقيقة وشفافة.
+              </p>
+
+              <!-- Lists -->
+              <div class="back-order-list">
+                <h3>نصائح للتمكن من التحقق</h3>
+                <p>يمكنك اتباع هذه الخطوات للتأكد من صحة المعلومة قبل نشرها:</p>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> التحقق من المصدر الأصلي للخبر</li>
+                  <li><i class="fa-solid fa-check"></i> مقارنة المعلومات مع مواقع تدقيق مستقلة</li>
+                  <li><i class="fa-solid fa-check"></i> مراجعة تاريخ النشر وسياق الخبر</li>
+                  <li><i class="fa-solid fa-check"></i> الانتباه إلى الصور والفيديوهات المزيفة</li>
+                </ul>
+              </div>
+
+              <!-- Blockquote -->
+              <blockquote>
+                <em>“المسؤولية في نشر المعلومة لا تقل أهمية عن مسؤولية من أصدرها.”</em>
+              </blockquote>
+
+              <p>
+                تدعم “تيقّن” حرية الرأي والتعبير، لكنها تؤمن أن حرية النشر يجب أن تقترن بالمسؤولية المجتمعية لضمان بيئة
+                رقمية صحية.
+              </p>
+
+              <!-- Tags & Share -->
+              <div class="blog-tags">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <ul class="mata-tags">
+                      <li class="tags">وسوم:</li>
+                      <li><a href="#">التحقق</a></li>
+                      <li><a href="#">مكافحة_الشائعات</a></li>
+                      <li><a href="#">تواصل_اجتماعي</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul class="social-links text-end">
+                      <li class="shares">شارك:</li>
+                      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Author info -->
+              <a href="#" class="post-author">
+                <div class="avatar">
+                  <img src="assets/img/user2.webp" alt="منصة تيقّن">
+                </div>
+                <div class="info">
+                  <h4 class="name">منصة تيقّن</h4>
+                  <p>
+                    منصة مجتمعـية مستقلة للتحقق من الأخبار والمعلومات وكشف الشائعات بدقّة ومصداقية عالية.
+                  </p>
+                  <span class="designation">جميع المقالات بقلم: فريق تيقّن</span>
+                </div>
+              </a>
+
+              <!-- Navigation between posts -->
+              <div class="single-nav">
+                <div class="back-prev">
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i> المنشور السابق <em>كيفية التحقق من الصور
+                      المزيفة</em></a>
+                </div>
+                <div class="back-next">
+                  <a href="#">المنشور التالي <i class="fa-solid fa-arrow-right"></i> <em>أدوات مجانية للتحقق</em></a>
+                </div>
+              </div>
+
+              <!-- Related posts slider -->
+              <div class="back-blog-related">
+                <div class="container">
+                  <div class="back-title back-small-title">
+                    <h3>منشورات ذات صلة</h3>
+                  </div>
+                  <ul id="back-blog-slider" class="owl-carousel owl-theme">
+                    <li class="item">
+                      <article class="regular-article-card">
+                        <!-- article image -->
+                        <img src="assets/img/articles/Horizontal/1.jpg" alt="Featured health study"
+                          class="article-card__image">
+                        <a href="#" class="custom-badge badge-ta2kid" data-label="تأكيد"></a>
+
+
+                        <!-- overlay with gradient -->
+                        <div class="article-card__body">
+
+                          <!-- Meta: type, category, date -->
+                          <div class="article-card__meta justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                              <a href="#" class="article-card__label article-card__label--type type-ta2kid">تأكيد</a>
+                              <a href="#"
+                                class="article-card__label article-card__label--category cat-taghazul">تكنولوجيا</a>
+                            </div>
+                            <time datetime="2025-06-18" class="article-card__date">
+                              <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                            </time>
+                          </div>
+
+                          <!-- Title -->
+                          <h3 class="article-card__title">
+                            <a href="#">تأكيد: إطلاق تحديث أمني جديد لنظام التشغيل</a>
+                          </h3>
+
+                          <!-- Contributors: author(s) & publisher(s) -->
+                          <div class="article-card__contributors">
+
+                            <!-- Authors block -->
+                            <div class="contributors__item contributors__item--author">
+                              <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                              <a href="#" class="contributors__label">
+                                د. سارة أحمد<span class="contributors__extra">+1</span>
+                              </a>
+                              <!-- full list on hover -->
+                              <div class="contributors__dropdown">
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  د. سارة احمد
+                                </a>
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  محمد الخطيب
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- Publishers block -->
+                            <div class="contributors__item contributors__item--publisher">
+                              <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                              <span class="contributors__label">
+                                جامعة القاهرة<span class="contributors__extra">+1</span>
+                              </span>
+                              <!-- full list on hover -->
+                              <div class="contributors__dropdown">
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  الجزيرة
+                                </a>
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  العربية
+                                </a>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="item">
+                      <article class="regular-article-card">
+                        <!-- article image -->
+                        <img src="assets/img/articles/Horizontal/2.jpg" alt="Featured health study"
+                          class="article-card__image">
+                        <a href="#" class="custom-badge badge-tawdi7" data-label="توضيح"></a>
+
+                        <!-- overlay with gradient -->
+                        <div class="article-card__body">
+
+                          <!-- Meta: type, category, date -->
+                          <div class="article-card__meta justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                              <a href="#" class="article-card__label article-card__label--type type-tawdi7">توضيح</a>
+                              <a href="#" class="article-card__label article-card__label--category cat-bi2a">بيئة</a>
+                            </div>
+                            <time datetime="2025-06-18" class="article-card__date">
+                              <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                            </time>
+                          </div>
+
+                          <!-- Title -->
+                          <h3 class="article-card__title">
+                            <a href="#">دراسة طبية: الغذاء المتوازن يحسّن مناعة الجسم</a>
+                          </h3>
+
+                          <!-- Contributors: author(s) & publisher(s) -->
+                          <div class="article-card__contributors">
+
+                            <!-- Authors block -->
+                            <div class="contributors__item contributors__item--author">
+                              <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                              <a href="#" class="contributors__label">
+                                د. سارة أحمد<span class="contributors__extra">+1</span>
+                              </a>
+                              <!-- full list on hover -->
+                              <div class="contributors__dropdown">
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  د. سارة احمد
+                                </a>
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  محمد الخطيب
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- Publishers block -->
+                            <div class="contributors__item contributors__item--publisher">
+                              <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                              <span class="contributors__label">
+                                جامعة القاهرة<span class="contributors__extra">+1</span>
+                              </span>
+                              <!-- full list on hover -->
+                              <div class="contributors__dropdown">
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  الجزيرة
+                                </a>
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  العربية
+                                </a>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="item">
+                      <article class="regular-article-card">
+                        <!-- article image -->
+                        <img src="assets/img/articles/Square/2.jpg" alt="Featured health study"
+                          class="article-card__image">
+                        <a href="#" class="custom-badge badge-mudallal" data-label="مضلل"></a>
+
+                        <!-- overlay with gradient -->
+                        <div class="article-card__body">
+
+                          <!-- Meta: type, category, date -->
+                          <div class="article-card__meta justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                              <a href="#" class="article-card__label article-card__label--type type-mudallal">مضلل</a>
+                              <a href="#"
+                                class="article-card__label article-card__label--category cat-thaqafa">ثقافة</a>
+                            </div>
+                            <time datetime="2025-06-18" class="article-card__date">
+                              <img src="assets/img/icons/icon-time.svg" alt=""> 18 يونيو 2025
+                            </time>
+                          </div>
+
+                          <!-- Title -->
+                          <h3 class="article-card__title">
+                            <a href="#">دراسة طبية: الغذاء المتوازن يحسّن مناعة الجسم</a>
+                          </h3>
+
+                          <!-- Contributors: author(s) & publisher(s) -->
+                          <div class="article-card__contributors">
+
+                            <!-- Authors block -->
+                            <div class="contributors__item contributors__item--author">
+                              <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                              <a href="#" class="contributors__label">
+                                د. سارة أحمد<span class="contributors__extra">+1</span>
+                              </a>
+                              <!-- full list on hover -->
+                              <div class="contributors__dropdown">
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  د. سارة احمد
+                                </a>
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  محمد الخطيب
+                                </a>
+                              </div>
+                            </div>
+
+                            <!-- Publishers block -->
+                            <div class="contributors__item contributors__item--publisher">
+                              <img src="assets/img/publisher.webp" alt="" class="contributors__icon">
+                              <span class="contributors__label">
+                                جامعة القاهرة<span class="contributors__extra">+1</span>
+                              </span>
+                              <!-- full list on hover -->
+                              <div class="contributors__dropdown">
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  الجزيرة
+                                </a>
+                                <a href="#">
+                                  <img src="assets/img/author.webp" alt="" class="contributors__icon">
+                                  العربية
+                                </a>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="fixed-btn ">
+    <a href="#" class="btn-whatsapp">
+      <div class="sign">
+        <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+          </path>
+        </svg>
+      </div>
+
+      <div class="text">اتصل الان</div>
+    </a>
+
+  </div>
+
+
+  <footer class="wpo-site-footer">
+    <!-- Upper Footer -->
+    <div class="wpo-upper-footer">
+      <div class="container">
+        <div class="row">
+
+          <!-- About Widget -->
+          <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div class="widget about-widget">
+              <div class="logo widget-title">
+                <img src="assets/img/logo.png" alt="تيقّن">
+              </div>
+              <p>
+                منصة “تيقّن” للتحقق من الأخبار والمعلومات، هدفنا كشف الحقائق ومكافحة الشائعات بموضوعية وشفافية تامة.
+              </p>
+            </div>
+          </div>
+
+          <!-- Important Links -->
+          <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div class="widget link-widget">
+              <div class="widget-title">
+                <h3>روابط هامة</h3>
+              </div>
+              <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">فريق العمل</a></li>
+                <li><a href="#">الأخبار العاجلة</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tags Widget -->
+          <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div class="widget tag-widget">
+              <div class="widget-title">
+                <h3>تصفح حسب الوسوم</h3>
+              </div>
+              <ul>
+                <li><a href="#">زائف</a></li>
+                <li><a href="#">مضلل</a></li>
+                <li><a href="#">مفبرك</a></li>
+                <li><a href="#">قديم</a></li>
+                <li><a href="#">توضيح</a></li>
+                <li><a href="#">تأكيد</a></li>
+                <li><a href="#">تحقيقات</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col col-lg-2 col-md-6 col-sm-12">
+            <div class="widget social-widget">
+              <div class="widget-title">
+                <h3>تابعنا على</h3>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="facebook">
+                    <i class="fab fa-facebook-f"></i> فيسبوك
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="twitter">
+                    <i class="fab fa-twitter"></i> تويتر
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="instagram">
+                    <i class="fab fa-instagram"></i> إنستاغرام
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="youtube">
+                    <i class="fab fa-youtube"></i> يوتيوب
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Lower Footer -->
+    <div class="wpo-lower-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright">
+              © 2025 منصة تيقّن. جميع الحقوق محفوظة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files: jQuery, Carousel, GSAP (for animations), Bootstrap, and custom scripts -->
+  <script src=" assets/js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="assets/js/animation.js" type="text/javascript"></script>
+  <script src="assets/js/script.js" type="text/javascript" defer></script>
+</body>
+
+</html>

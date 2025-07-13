@@ -555,3 +555,7 @@ ul {
   color: hsl(332, 79%, 58%);
   border-color: hsl(332, 79%, 80%);
 }
+
+.container.back-max1100 {
+  max-width: 1100px;
+}
