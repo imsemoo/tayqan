@@ -94,7 +94,7 @@ body {
   grid-template-rows: auto auto;
   /* two rows: top & bottom */
   gap: var(--space-md);
-  /* comfortable gutter */
+  height: 450px;
 }
 
 /* Card 1: left half, full height */
@@ -1666,13 +1666,6 @@ body {
   gap: var(--space-xs);
 }
 
-.btn-outline-primary::before {
-  content: "\f0f3";
-  /* FontAwesome bell */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: var(--color-primary);
-}
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
