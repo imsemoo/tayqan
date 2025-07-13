@@ -489,7 +489,7 @@ body {
 }
 
 .section-title {
-  font-size: 30px;
+  font-size: var(--font-xl);
   line-height: 1em;
   font-weight: 700;
   color: var(--text-primary);
@@ -1744,18 +1744,31 @@ body {
   position: relative;
   padding-bottom: var(--space-sm);
   margin-bottom: var(--space-md);
+  font-weight: bold;
+  width: max-content;
+  margin: 0 auto 40px;
+}
+
+.section-subtitle::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 5px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  content: "";
 }
 
 .section-subtitle::after {
-  content: "";
-  width: 60px;
-  height: 4px;
-  background: var(--color-primary);
   position: absolute;
+  right: 110px;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 2px;
+  width: 30px;
+  height: 5px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  content: "";
 }
 
 /* Ownership & Where */
