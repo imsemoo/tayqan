@@ -1698,3 +1698,131 @@ body {
   font-size: 0.9em;
   margin-top: 6px;
 }
+
+/* ===== About Page Styles ===== */
+.about-page {
+  background: var(--color-content-bg);
+}
+
+.width-max {
+  width: max-content;
+}
+
+/* Intro */
+.about-intro {
+  gap: var(--space-lg);
+}
+
+.about-intro .section-title {
+  font-size: var(--font-xxl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+/* Timeline */
+.timeline {
+  gap: var(--space-lg);
+}
+
+.timeline-item {
+  flex: 1;
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-item i {
+  color: var(--color-primary);
+}
+
+/* Sections subtitles */
+.section-subtitle {
+  font-size: var(--font-xl);
+  color: var(--color-dark);
+  text-align: center;
+  position: relative;
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.section-subtitle::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Ownership & Where */
+.about-ownership p,
+.about-where p {
+  font-size: var(--font-md);
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.about-where img {
+  max-width: 100%;
+
+}
+
+/* Team Slider Enhancements */
+.team-carousel .item {
+  background: var(--color-content-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.team-carousel .item:hover {
+  transform: translateY(-5px);
+}
+
+.team-avatar {
+  margin: auto;
+  width: 120px !important;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid var(--color-primary);
+}
+
+/* Override nav button styles */
+.team-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-accent);
+  border: none;
+  padding: var(--space-xs);
+  border-radius: 50%;
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  transition: background 0.3s ease;
+}
+
+.team-carousel .owl-nav .owl-prev {
+  right: -var(--space-lg);
+}
+
+.team-carousel .owl-nav .owl-next {
+  left: -var(--space-lg);
+}
+
+.team-carousel .owl-nav button:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-intro {
+    flex-direction: column-reverse;
+  }
+}
