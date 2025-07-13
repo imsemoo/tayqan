@@ -195,7 +195,7 @@ span {
 }
 
 .btn-secondary:hover {
-  background-color: #b0def0;
+  background-color: var(--color-primary-hover);
 }
 
 .btn-outline-primary {
