@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <title>مقالات تيقّن | التحقق من الأخبار وكشف الشائعات</title>
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div id="preloadr">
+    <div class="loader"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg  ">
+    <div class="container ">
+      <!-- Brand logo -->
+      <a class="navbar-brand " href="/">
+        <img src="assets/img/logo.png" alt="تيقّن" class="navbar-logo" />
+      </a>
+
+      <!-- Mobile toggle button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible nav links -->
+      <div class="collapse navbar-collapse " id="mainNav">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+          <!-- Home link -->
+          <li class="nav-item px-2">
+            <a class="nav-link  active" href="#">الرئيسية</a>
+          </li>
+          <!-- News categories dropdown -->
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle " href="#" id="newsDropdown" data-bs-toggle="dropdown">
+              تصنيفات الأخبار
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+              <li><a class="dropdown-item" href="#">الكل</a></li>
+              <li><a class="dropdown-item" href="#">زائف</a></li>
+              <li><a class="dropdown-item" href="#">مضلل</a></li>
+              <li><a class="dropdown-item" href="#">مفبرك</a></li>
+              <li><a class="dropdown-item" href="#">قديم</a></li>
+              <li><a class="dropdown-item" href="#">توضيح</a></li>
+              <li><a class="dropdown-item" href="#">تأكيد</a></li>
+            </ul>
+          </li>
+          <!-- Reports & news link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#reports">تقارير وأخبار</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#">سياسة الشفافية </a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#reports">منهجية تيقّن </a>
+          </li>
+          <!-- About us link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#about">من نحن</a>
+          </li>
+          <!-- Contact link -->
+          <li class="nav-item px-2">
+            <a class="nav-link " href="#contact">تواصل معنا</a>
+          </li>
+        </ul>
+
+        <!-- Search button and report button -->
+        <div class="d-flex align-items-center gap-2">
+          <!-- Open search modal -->
+          <button class="btn btn-outline-primary p-2 btn-search" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search"></i>
+          </button>
+          <!-- Report claim button -->
+          <a href="#report" class="btn btn-primary text-white px-4">أبلغ عن إدعاء</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen search modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-surface p-4">
+        <!-- Modal header -->
+        <div class="modal-header border-0">
+          <h5 class="modal-title">ابحث في المقالات أو الكتاب</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Modal body with search form -->
+        <div class="modal-body d-flex flex-column align-items-center">
+          <form class="w-100" style="max-width:800px;">
+            <!-- Search input group -->
+            <div class="input-group input-group-lg mb-4">
+              <input type="text" class="form-control" placeholder="ابحث عن مقالات أو كتاب...">
+              <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Category filter -->
+            <div class="mb-3">
+              <label class="form-label">التصنيفات</label>
+              <select class="form-select">
+                <option>الكل</option>
+                <option>زائف</option>
+                <option>مضلل</option>
+                <option>مفبرك</option>
+                <option>قديم</option>
+                <option>توضيح</option>
+                <option>تأكيد</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="back-breadcrumbs">
+    <div class="breadcrumbs-wrap">
+      <div class="breadcrumbs-inner">
+        <div class="container">
+          <div class="breadcrumbs-text">
+            <h1 class="breadcrumbs-title">مقالات تيقّن</h1>
+            <div class="back-nav">
+              <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li>المقالات</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="articles-page-area section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="advanced-search-box mb-5">
+            <h4 class="mb-4">بحث متقدم</h4>
+            <form>
+              <div class="row">
+                <div class="col-lg-12 mb-3">
+                  <input type="text" class="form-control" placeholder="ابحث بالاسم أو الكلمة المفتاحية...">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="dateFrom" class="form-label">التاريخ من</label>
+                  <input type="date" class="form-control" id="dateFrom">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="dateTo" class="form-label">التاريخ إلى</label>
+                  <input type="date" class="form-control" id="dateTo">
+                </div>
+                <div class="col-md-8 mb-3">
+                  <label for="categorySelect" class="form-label">التصنيف</label>
+                  <select class="form-select" id="categorySelect">
+                    <option selected>الكل</option>
+                    <option value="zaef">زائف</option>
+                    <option value="mudallal">مضلل</option>
+                    <option value="mufabrak">مفبرك</option>
+                    <option value="qadim">قديم</option>
+                    <option value="tawdi7">توضيح</option>
+                    <option value="ta2kid">تأكيد</option>
+                  </select>
+                </div>
+                <div class="col-md-4 d-flex align-items-end mb-3">
+                  <button type="submit" class="btn btn-primary w-100">بحث</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <article class="regular-article-card">
+                <img src="assets/img/articles/Square/1.jpg" alt="Article Title" class="article-card__image">
+                <a href="#" class="custom-badge badge-zayef" data-label="زائف"></a>
+                <div class="article-card__body">
+                  <div class="article-card__meta justify-content-between">
+                    <a href="#" class="article-card__label article-card__label--category cat-siyasa">سياسة</a>
+                    <time datetime="2025-07-20" class="article-card__date">
+                      <img src="assets/img/icons/icon-time.svg" alt=""> 20 يوليو 2025
+                    </time>
+                  </div>
+                  <h3 class="article-card__title"><a href="#">تحليل: هل التصريحات الأخيرة تؤثر على السوق؟</a></h3>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 mb-4">
+              <article class="regular-article-card">
+                <img src="assets/img/articles/Square/2.jpg" alt="Article Title" class="article-card__image">
+                <a href="#" class="custom-badge badge-mudallal" data-label="مضلل"></a>
+                <div class="article-card__body">
+                  <div class="article-card__meta justify-content-between">
+                    <a href="#" class="article-card__label article-card__label--category cat-seha">صحة</a>
+                    <time datetime="2025-07-19" class="article-card__date">
+                      <img src="assets/img/icons/icon-time.svg" alt=""> 19 يوليو 2025
+                    </time>
+                  </div>
+                  <h3 class="article-card__title"><a href="#">فيديو قديم يُنسب لحدث جديد عن انتشار وباء</a></h3>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 mb-4">
+              <article class="regular-article-card">
+                <img src="assets/img/articles/Square/3.jpg" alt="Article Title" class="article-card__image">
+                <a href="#" class="custom-badge badge-ta2kid" data-label="تأكيد"></a>
+                <div class="article-card__body">
+                  <div class="article-card__meta justify-content-between">
+                    <a href="#" class="article-card__label article-card__label--category cat-iqtisad">اقتصاد</a>
+                    <time datetime="2025-07-18" class="article-card__date">
+                      <img src="assets/img/icons/icon-time.svg" alt=""> 18 يوليو 2025
+                    </time>
+                  </div>
+                  <h3 class="article-card__title"><a href="#">البنك المركزي يؤكد استقرار سعر الصرف</a></h3>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 mb-4">
+              <article class="regular-article-card">
+                <img src="assets/img/articles/Square/4.jpg" alt="Article Title" class="article-card__image">
+                <a href="#" class="custom-badge badge-qadim" data-label="قديم"></a>
+                <div class="article-card__body">
+                  <div class="article-card__meta justify-content-between">
+                    <a href="#" class="article-card__label article-card__label--category cat-thaqafa">ثقافة</a>
+                    <time datetime="2025-07-17" class="article-card__date">
+                      <img src="assets/img/icons/icon-time.svg" alt=""> 17 يوليو 2025
+                    </time>
+                  </div>
+                  <h3 class="article-card__title"><a href="#">إعادة نشر صورة فنية على أنها حدث واقعي</a></h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="#">السابق</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <div class="col-lg-4">
+          <div class="blog-sidebar">
+            <div class="widget category-widget">
+              <h3>المواضيع الشائعة</h3>
+              <ul>
+                <li><a href="#">كل الأخبار <span>(150)</span></a></li>
+                <li><a href="#">زائف <span>(30)</span></a></li>
+                <li><a href="#">مضلل <span>(45)</span></a></li>
+                <li><a href="#">مفبرك <span>(20)</span></a></li>
+              </ul>
+            </div>
+            <div class="widget recent-post-widget">
+              <h3>الأكثر قراءة</h3>
+              <div class="posts">
+                <div class="post">
+                  <div class="img-holder"><img src="assets/img/articles/Horizontal/1.jpg" alt=""></div>
+                  <div class="details">
+                    <span class="date">15 يوليو 2025</span>
+                    <h4><a href="#">5 أسرار لاختيار الأثاث المناسب</a></h4>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="img-holder"><img src="assets/img/articles/Horizontal/2.jpg" alt=""></div>
+                  <div class="details">
+                    <span class="date">12 يوليو 2025</span>
+                    <h4><a href="#">روتين صحي لحياة متوازنة</a></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="wpo-site-footer">
+    <!-- Upper Footer -->
+    <div class="wpo-upper-footer">
+      <div class="container">
+        <div class="row">
+
+          <!-- About Widget -->
+          <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div class="widget about-widget">
+              <div class="logo widget-title">
+                <img src="assets/img/logo.png" alt="تيقّن">
+              </div>
+              <p>
+                منصة “تيقّن” للتحقق من الأخبار والمعلومات، هدفنا كشف الحقائق ومكافحة الشائعات بموضوعية وشفافية تامة.
+              </p>
+            </div>
+          </div>
+
+          <!-- Important Links -->
+          <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div class="widget link-widget">
+              <div class="widget-title">
+                <h3>روابط هامة</h3>
+              </div>
+              <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">فريق العمل</a></li>
+                <li><a href="#">الأخبار العاجلة</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tags Widget -->
+          <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div class="widget tag-widget">
+              <div class="widget-title">
+                <h3>تصفح حسب الوسوم</h3>
+              </div>
+              <ul>
+                <li><a href="#">زائف</a></li>
+                <li><a href="#">مضلل</a></li>
+                <li><a href="#">مفبرك</a></li>
+                <li><a href="#">قديم</a></li>
+                <li><a href="#">توضيح</a></li>
+                <li><a href="#">تأكيد</a></li>
+                <li><a href="#">تحقيقات</a></li>
+                <li><a href="#">غير صحيح</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col col-lg-2 col-md-6 col-sm-12">
+            <div class="widget social-widget">
+              <div class="widget-title">
+                <h3>تابعنا على</h3>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="facebook">
+                    <i class="fab fa-facebook-f"></i> فيسبوك
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="twitter">
+                    <i class="fab fa-twitter"></i> تويتر
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="instagram">
+                    <i class="fab fa-instagram"></i> إنستاغرام
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="youtube">
+                    <i class="fab fa-youtube"></i> يوتيوب
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Lower Footer -->
+    <div class="wpo-lower-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright">
+              © 2025 منصة تيقّن. جميع الحقوق محفوظة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files: jQuery, Carousel, GSAP (for animations), Bootstrap, and custom scripts -->
+  <script src=" assets/js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="assets/js/animation.js" type="text/javascript"></script>
+  <script src="assets/js/script.js" type="text/javascript" defer></script>
+
+</body>
+
+</html>
