@@ -194,4 +194,100 @@
     enableTouchContributors();
   });
 
+
+
+  // ===========================
+  // Contact page behaviors
+  // ===========================
+  (function () {
+    const scope = document.querySelector('.contact-page-area');
+    if (!scope) return;
+
+    // Copy-to-clipboard for buttons with [data-copy]
+    scope.querySelectorAll('[data-copy]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(btn.getAttribute('data-copy') || '');
+          toast(scope, 'تم النسخ ✓', 'ok');
+        } catch {
+          toast(scope, 'تعذّر النسخ', 'err');
+        }
+      });
+    });
+
+    // Map overlay close
+    const ovClose = scope.querySelector('.map-card .overlay-close');
+    const overlay = scope.querySelector('.map-card .map-overlay');
+    if (ovClose && overlay) {
+      ovClose.addEventListener('click', () => overlay.classList.add('d-none'));
+    }
+
+    // Form validation + (optional) async submit
+    const form = scope.querySelector('#contactForm');
+    const sendBtn = scope.querySelector('#sendBtn');
+    const spinner = sendBtn?.querySelector('.btn-spinner');
+    const label = sendBtn?.querySelector('.btn-label');
+
+    function setLoading(v) {
+      if (!sendBtn) return;
+      sendBtn.disabled = v;
+      if (spinner) spinner.classList.toggle('d-none', !v);
+      if (label) label.textContent = v ? 'جارٍ الإرسال...' : 'إرسال الرسالة';
+    }
+
+    function toast(root, msg, type) {
+      const box = root.querySelector('.form-status');
+      if (!box) return;
+      box.innerHTML = `<span class="${type === 'ok' ? 'ok' : 'err'}">
+      <i class="fas ${type === 'ok' ? 'fa-check-circle' : 'fa-exclamation-triangle'}"></i>${msg}
+    </span>`;
+      setTimeout(() => { box.innerHTML = ''; }, 4000);
+    }
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        form.classList.add('was-validated');
+        if (!form.checkValidity()) {
+          toast(scope, 'من فضلك اكمل الحقول المطلوبة.', 'err');
+          return;
+        }
+
+        // Submit
+        setLoading(true);
+        const endpoint = form.getAttribute('data-endpoint'); // اتركه فارغًا لو مفيش API
+        const payload = {
+          name: form.querySelector('#contactName')?.value?.trim(),
+          email: form.querySelector('#contactEmail')?.value?.trim(),
+          subject: form.querySelector('#contactSubject')?.value?.trim(),
+          message: form.querySelector('#contactMessage')?.value?.trim(),
+        };
+
+        try {
+          if (endpoint) {
+            const res = await fetch(endpoint, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload),
+            });
+            if (!res.ok) throw new Error('Network error');
+          } else {
+            // محاكاة نجاح بدون باك-إند
+            await new Promise(r => setTimeout(r, 900));
+          }
+
+          form.reset();
+          form.classList.remove('was-validated');
+          toast(scope, 'تم استلام رسالتك. شكرًا لك!', 'ok');
+        } catch (err) {
+          toast(scope, 'حدث خطأ أثناء الإرسال. حاول مجددًا.', 'err');
+        } finally {
+          setLoading(false);
+        }
+      });
+    }
+  })();
+
 })(jQuery, window, document);
